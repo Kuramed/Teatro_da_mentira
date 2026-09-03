@@ -4,17 +4,15 @@ import { UpdateUserDto } from './dto/update-user.dto';
 export declare class UsersController {
     private readonly usersService;
     constructor(usersService: UsersService);
-    create(createUserDto: CreateUserDto): import("../generated/prisma/models").Prisma__UserClient<{
+    create(createUserDto: CreateUserDto): import("@prisma/client").Prisma.Prisma__UserClient<{
         email: string;
         name: string | null;
         password: string;
         createdAt: Date;
         updatedAt: Date;
         id: number;
-    }, never, import("@prisma/client/runtime/client").DefaultArgs, {
-        omit: import("../generated/prisma/internal/prismaNamespace").GlobalOmitConfig;
-    }>;
-    findAll(): import("../generated/prisma/internal/prismaNamespace").PrismaPromise<{
+    }, never, import("@prisma/client/runtime/client").DefaultArgs, import("@prisma/client").Prisma.PrismaClientOptions>;
+    findAll(): import("@prisma/client").Prisma.PrismaPromise<{
         email: string;
         name: string | null;
         password: string;
@@ -22,34 +20,28 @@ export declare class UsersController {
         updatedAt: Date;
         id: number;
     }[]>;
-    findOne(id: string): import("../generated/prisma/models").Prisma__UserClient<{
+    findOne(id: string): import("@prisma/client").Prisma.Prisma__UserClient<{
         email: string;
         name: string | null;
         password: string;
         createdAt: Date;
         updatedAt: Date;
         id: number;
-    }, null, import("@prisma/client/runtime/client").DefaultArgs, {
-        omit: import("../generated/prisma/internal/prismaNamespace").GlobalOmitConfig;
-    }>;
-    update(id: string, updateUserDto: UpdateUserDto): import("../generated/prisma/models").Prisma__UserClient<{
+    }, null, import("@prisma/client/runtime/client").DefaultArgs, import("@prisma/client").Prisma.PrismaClientOptions>;
+    update(id: string, updateUserDto: UpdateUserDto): import("@prisma/client").Prisma.Prisma__UserClient<{
         email: string;
         name: string | null;
         password: string;
         createdAt: Date;
         updatedAt: Date;
         id: number;
-    }, never, import("@prisma/client/runtime/client").DefaultArgs, {
-        omit: import("../generated/prisma/internal/prismaNamespace").GlobalOmitConfig;
-    }>;
-    remove(id: string): import("../generated/prisma/models").Prisma__UserClient<{
+    }, never, import("@prisma/client/runtime/client").DefaultArgs, import("@prisma/client").Prisma.PrismaClientOptions>;
+    remove(id: string): import("@prisma/client").Prisma.Prisma__UserClient<{
         email: string;
         name: string | null;
         password: string;
         createdAt: Date;
         updatedAt: Date;
         id: number;
-    }, never, import("@prisma/client/runtime/client").DefaultArgs, {
-        omit: import("../generated/prisma/internal/prismaNamespace").GlobalOmitConfig;
-    }>;
+    }, never, import("@prisma/client/runtime/client").DefaultArgs, import("@prisma/client").Prisma.PrismaClientOptions>;
 }
